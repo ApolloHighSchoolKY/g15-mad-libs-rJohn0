@@ -127,17 +127,18 @@ public class MadLib
 	public String getRandomVerb()
 	{
 		
-		return "" + verbs.get((int)(Math.random()*13 + 1));
+		return "" + verbs.get((int)(Math.random()*verbs.size()));
 	}
 
 	public String getRandomNoun()
 	{
-		return "" + nouns.get((int)(Math.random()*19 + 1));
+		return "" + nouns.get((int)(Math.random()*nouns.size()));
 	}
 
 	public String getRandomAdjective()
-	{
-		return "" + adjectives.get((int)(Math.random()*16 + 1));
+	{	
+		
+		return "" + adjectives.get((int)(Math.random()*adjectives.size()));
 	}
 
 	public String toString()
