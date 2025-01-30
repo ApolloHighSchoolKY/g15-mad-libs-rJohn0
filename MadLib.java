@@ -36,13 +36,18 @@ public class MadLib
 		{
 			//Read the different parts of the story and concatenate the resulting
 			//story using the symbols to tell you the parts of speech
-			
+			Scanner chopper = new Scanner(new File("story.dat"));
+			String untranslated = "";
+			while(chopper.hasNext())
+			{
+				untranslated += chopper.next() + " ";
+			}
+			chopper.close();
 			//While there is more of the story, read in the word/symbol
 	
 			//If what was read in is one of the symbols, find a random
 				//word to replace it.
-			Scanner reader = new Scanner(new File("story.dat"));
-			
+			Scanner reader = new Scanner(untranslated);
 			while(reader.hasNext())
 			{
 				String word = reader.next();
