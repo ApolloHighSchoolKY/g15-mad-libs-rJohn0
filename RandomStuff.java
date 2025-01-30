@@ -1,4 +1,4 @@
-
+ 
 //Import line for using new Random
 import java.util.Random;
 
@@ -17,6 +17,12 @@ public class RandomStuff {
 
     	System.out.println(y);
 
+		
+		
+		System.out.println((int)(Math.random()*12 - 3));
+
+		System.out.println((int)(Math.random()*15 + 13));
+		System.out.println(rand.nextInt(15) + 13);
     }
 
 
